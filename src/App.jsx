@@ -2,6 +2,10 @@ import Header from './components/Header/Header'
 import './App.css'
 import Banner from './components/Banner/Banner'
 import OurRecipes from './components/ourRecipes/OurRecipes'
+import Recipes from './components/Recipes/Recipes'
+import Cookings from './components/Cookings/Cookings'
+
+
 
 function App() {
 
@@ -11,7 +15,12 @@ function App() {
       <Header></Header>
       <Banner></Banner>
       <OurRecipes></OurRecipes>
-    </>
+
+      <div className='md:flex justify-between'>
+      <Recipes></Recipes>
+      <Cookings></Cookings>
+      </div>
+      </>
   )
 }
 

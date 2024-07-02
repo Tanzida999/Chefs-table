@@ -1,6 +1,6 @@
 [
     {
-        "recipe_image": "chicken_stir_fry.jpg",
+        "recipe_image": "https://i.ibb.co/d0PZ2G6/chicken-stir-fry.jpg",
         "recipe_id": "001",
         "recipe_name": "Chicken Stir Fry",
         "short_description": "A quick and healthy chicken stir fry with vegetables.",
@@ -9,7 +9,7 @@
         "calories": "320 calories"
     },
     {
-        "recipe_image": "spaghetti_bolognese.jpg",
+        "recipe_image": "https://i.ibb.co/MDxK710/spaghetti.jpg",
         "recipe_id": "002",
         "recipe_name": "Spaghetti Bolognese",
         "short_description": "Classic Italian pasta dish with rich meat sauce.",
@@ -18,7 +18,7 @@
         "calories": "450 calories"
     },
     {
-        "recipe_image": "caesar_salad.jpg",
+        "recipe_image": "https://i.ibb.co/09CMJcr/caesar-salad.jpg",
         "recipe_id": "003",
         "recipe_name": "Caesar Salad",
         "short_description": "Crisp romaine lettuce with creamy Caesar dressing.",
@@ -27,7 +27,7 @@
         "calories": "180 calories"
     },
     {
-        "recipe_image": "beef_tacos.jpg",
+        "recipe_image": "https://i.ibb.co/pnYvy0s/beef-tacos.jpg",
         "recipe_id": "004",
         "recipe_name": "Beef Tacos",
         "short_description": "Tasty beef tacos with fresh salsa and guacamole.",
@@ -36,7 +36,7 @@
         "calories": "350 calories"
     },
     {
-        "recipe_image": "vegetable_curry.jpg",
+        "recipe_image": "https://i.ibb.co/yBrMRWQ/curry.jpg",
         "recipe_id": "005",
         "recipe_name": "Vegetable Curry",
         "short_description": "A spicy and flavorful vegetable curry.",
@@ -45,7 +45,7 @@
         "calories": "300 calories"
     },
     {
-        "recipe_image": "banana_bread.jpg",
+        "recipe_image": "https://i.ibb.co/sy0v45V/banana-bread.jpg",
         "recipe_id": "006",
         "recipe_name": "Banana Bread",
         "short_description": "Moist and delicious banana bread.",

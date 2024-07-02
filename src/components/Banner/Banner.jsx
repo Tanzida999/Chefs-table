@@ -2,7 +2,7 @@ import Cover from '../../assets/images/cover.jpeg'
 const Banner = () => {
     return (
       <div
-        className="bg-cover bg-center h-96 flex flex-col justify-center items-center text-white"
+        className="bg-cover bg-center h-96 flex flex-col justify-center items-center text-white rounded-xl"
         style={{ backgroundImage: `url(${Cover})` }}
       >
         <h1 className="text-4xl font-bold mb-4">Welcome to Mothers Secret Recipe</h1>
