@@ -7,8 +7,8 @@ const Recipe = ({ recipe }) => {
     const { recipe_name, recipe_image, short_description, ingredients, preparing_time, calories } = recipe;
 
     return (
-        <div className='border p-4 rounded-md shadow-md w-full max-w-lg mx-auto'>
-            <div className='flex justify-center mb-8'>
+        <div className='border p-4 rounded-md shadow-md w-2/3 max-w-lg mx-auto mt-4'>
+            <div className='justify-center mb-8'>
                 <img className='h-72 w-72 object-cover' src={recipe_image} alt={`Cover picture of the recipe ${recipe_name}`} />
             </div>
             <h2 className="text-4xl font-bold">{recipe_name}</h2>
