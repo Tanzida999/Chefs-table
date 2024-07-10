@@ -1,24 +1,26 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import Cooking from './Cooking/Cooking';
 
-const Cookings = ({cookings}) =>  {
-        return (
-            <div className='md:w-1/2'>
-            <h1 className='text-4xl'>Currently Cooking  :{cookings.length}</h1>
-            {
-                cookings.map(cooking => <Cooking key={cooking.id} cooking={cooking}></Cooking>)
-            }
-
-
-
-            <div><button className='btn btn-primary'>Cooking</button></div>
+const Cookings = ({ cookings, handlePreparing }) => {
+    return (
+        <div className='md: bg-gray-300 ml-4 mt-8 pt-4 rounded-xl'>
+            <h1 className='text-2xl'>Want to Cook : {cookings.length}</h1>
+            <div className='flex justify-between p-4 m-4'>
+                <p>Name</p>
+                <p>Time</p>
+                <p>Calories</p>
+            </div>
+            {cookings.map(cooking => (
+                <Cooking key={cooking.recipe_id} cooking={cooking} handlePreparing={handlePreparing} />
+            ))}
         </div>
-        );
-    }
-
+    );
+};
 
 Cookings.propTypes = {
- cooking: PropTypes.array
+    cookings: PropTypes.array.isRequired,
+    handlePreparing: PropTypes.func.isRequired
 };
 
 export default Cookings;

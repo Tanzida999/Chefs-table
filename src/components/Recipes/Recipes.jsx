@@ -13,7 +13,7 @@ const Recipes = ({handleAddToCooking}) => {
     }, []);
 
     return (
-        <div className="container mx-auto mt-8">
+        <div className="container mx-auto mt-8 mr-8">
             <h2 className="text-4xl mb-4">Recipes ({recipes.length})</h2>
             <div className="flex flex-wrap -mx-32">
                 {recipes.map(recipe => (
