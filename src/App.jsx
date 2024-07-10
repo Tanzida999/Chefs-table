@@ -5,13 +5,29 @@ import Banner from './components/Banner/Banner';
 import OurRecipes from './components/ourRecipes/OurRecipes';
 import Recipes from './components/Recipes/Recipes';
 import Cookings from './components/Cookings/Cookings';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
     const [cookings, setCookings] = useState([]);
     const [preparing, setPreparing] = useState([]);
+    const [addedCookings, setAddedCookings] = useState([]);
 
     const handleAddToCooking = (recipe) => {
-        setCookings((prevCookings) => [...prevCookings, recipe]);
+        if (addedCookings.includes(recipe)) {
+            toast.warning('This recipe is already in your list!', {
+                position: 'top-right',
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+        } else {
+            setCookings((prevCookings) => [...prevCookings, recipe]);
+            setAddedCookings((prevAdded) => [...prevAdded, recipe]);
+        }
     };
 
     const handlePreparing = (recipe) => {
@@ -24,6 +40,7 @@ function App() {
             <Header />
             <Banner />
             <OurRecipes />
+            <ToastContainer />
             <div className='container mx-auto mt-8 flex flex-col  md:flex-row gap-4'>
                 <div className='md:w-2/3'>
                     <Recipes handleAddToCooking={handleAddToCooking} />

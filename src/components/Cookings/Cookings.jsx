@@ -11,8 +11,8 @@ const Cookings = ({ cookings, handlePreparing }) => {
                 <p>Time</p>
                 <p>Calories</p>
             </div>
-            {cookings.map(cooking => (
-                <Cooking key={cooking.recipe_id} cooking={cooking} handlePreparing={handlePreparing} />
+            {cookings.map((cooking, idx )=> (
+                <Cooking key={idx} cooking={cooking} handlePreparing={handlePreparing} />
             ))}
         </div>
     );
