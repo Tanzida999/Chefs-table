@@ -31,7 +31,7 @@ function App() {
                 <div className='md:w-1/3 flex flex-col gap-4 ml-8'>
                     <Cookings cookings={cookings} handlePreparing={handlePreparing} />
                     <div className= 'ml-4 bg-gray-300 p-4 rounded-xl'>
-                        <h1 className='text-2xl mb-4'>Preparing: {preparing.length}</h1>
+                        <h1 className='text-2xl mb-4'>Preparing no: {preparing.length}</h1>
                         {preparing.map((recipe, index) => (
                             <div key={index} className='flex justify-between p-4 mb-4 border-b'>
                                 <h3>{recipe.recipe_name}</h3>
